@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@600&display=swap');
+
+a{
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+}
+
+.navbar{
+    background-color: #2B2E4A;
+    height: 100px;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.navbar  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.logo > h1{
+    font-size: 50px;
+    font-family: 'Zen Old Mincho', serif;
+    color: wheat;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+#explore-btn{
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    width: 170px;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.explore-strip{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E84545;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+}
+
+.explore-strip ul{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.explore-strip li{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.search-box{
+  position: absolute;
+  color: black;
+}
+
+
+
+
+

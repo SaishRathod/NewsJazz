@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Cards from "./componenets/Cards";
+import Card from "./componenets/Card";
+import "./App.css";
+import Navbar from "./componenets/Navbar";
+import Datetime from "./componenets/Datetime";
+import LatestNews from "./componenets/LatestNews";
+import AstrologyNews from "./componenets/AstrologyNews";
+import data from "./sampleOutput.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Datetime />
+      <Navbar />
+      {/* {data.articles.map((item) => {
+        return <Cards key={item.title} item={item} />;
+      })} */}
+      {/* {data.articles.map((item) => {
+        return <Card key={item.title} item={item} />;
+      })} */}
     </div>
   );
 }
