@@ -41,6 +41,10 @@ body{
     text-underline-offset: 15px;
 }
 
+.logo-text{
+    color: wheat;
+}
+
 .navbar a{
     text-decoration: none;
 }

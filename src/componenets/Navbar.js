@@ -20,7 +20,9 @@ export default function Navbar() {
 
           <a href="/" className="logo">
             <h1>
-              <Link to="/"> News Jazz </Link>
+              <Link to="/" className="logo-text">
+                News Jazz
+              </Link>
             </h1>
           </a>
 
