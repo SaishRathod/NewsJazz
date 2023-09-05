@@ -67,8 +67,11 @@ export default function Navbar() {
 
           <ul>
             <li>
-              Search
-              {/* <input className="search-box" type="text" placeholder="Search..." /> */}
+              <input
+                className="search-box"
+                type="text"
+                placeholder="Search news..."
+              />
             </li>
           </ul>
         </div>

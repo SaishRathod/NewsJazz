@@ -82,10 +82,22 @@ body{
   padding-right: 80px;
 }
 
-.search-box{
-  position: absolute;
-  color: black;
+input{
+    /* background-color: #2B2E4A; */
+    color: #2B2E4A;
+    border: 1px solid #2B2E4A;
+    border-radius: 5%;
+    width: 250px;
 }
+
+::placeholder {        /* for selecting placeholders */
+    color: #2B2E4A;
+  }
+
+ :placeholder-shown{    /* for the placeholder text */
+    padding-left: 10px;
+}
+  
 
 
 
