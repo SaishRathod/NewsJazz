@@ -1,9 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import LatestNews from "./LatestNews";
-import AstrologyNews from "./AstrologyNews";
-import Home from "./Home";
+import NewsCards from "./NewsCards";
 
 export default function Navbar() {
   return (
@@ -43,37 +41,57 @@ export default function Navbar() {
           <div className="explore-options">
             <ul>
               <li>
-                <Link to="/latestnews">Latest News</Link>
+                <Link to="/business">Business</Link>
               </li>
               <li>
-                <Link to="/astrology">Astrology</Link>
+                <Link to="/entertainment">Entertainment</Link>
               </li>
-              <li>Cricket</li>
-              <li>Politics</li>
-              <li>Space</li>
+              <li>
+                <Link to="/science">Science</Link>
+              </li>
+              <li>
+                <Link to="/sports">Sports</Link>
+              </li>
+              <li>
+                <Link to="/technology">Technology</Link>
+              </li>
             </ul>
           </div>
           <Routes>
-            <Route path="/" element={<Home title="" />}></Route>
+            <Route path="/" element={<NewsCards title="For you" />}></Route>
             <Route
-              path="/latestnews"
-              element={<LatestNews title="Latest News" />}
+              path="/business"
+              element={<NewsCards title="Business News" />}
             ></Route>
             <Route
-              path="/astrology"
-              element={<AstrologyNews title="Astrology News" />}
+              path="/entertainment"
+              element={<NewsCards title="Entertainment News" />}
+            ></Route>
+            <Route
+              path="/science"
+              element={<NewsCards title="Science News" />}
+            ></Route>
+            <Route
+              path="/sports"
+              element={<NewsCards title="Sports News" />}
+            ></Route>
+            <Route
+              path="/technology"
+              element={<NewsCards title="Technology News" />}
             ></Route>
           </Routes>
 
-          <ul>
-            <li>
-              <input
-                className="search-box"
-                type="text"
-                placeholder="Search news..."
-              />
-            </li>
-          </ul>
+          <div className="search-section">
+            <ul>
+              <li>
+                <input
+                  className="search-box"
+                  type="text"
+                  placeholder="Search news..."
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </Router>
     </div>

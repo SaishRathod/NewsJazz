@@ -17,7 +17,7 @@ body{
 
 .navbar{
     background-color: #2B2E4A;
-    height: 100px;
+    height: 120px;
     position: relative;
     display: flex;
     padding-left: 20px;
@@ -66,9 +66,14 @@ body{
     justify-content: space-between;
     background-color: #E84545;
     padding-top: 7px;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     height: 40px;
+}
+
+.explore-options{
+    position: absolute;
+    /* left: 20px; */
 }
 
 .explore-strip ul{
