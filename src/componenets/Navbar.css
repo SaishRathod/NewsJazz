@@ -91,15 +91,15 @@ input{
     /* background-color: #2B2E4A; */
     color: #2B2E4A;
     border: 1px solid #2B2E4A;
-    border-radius: 5%;
+    border-radius: 2%;
     width: 250px;
 }
 
 ::placeholder {        /* for selecting placeholders */
-    color: #2B2E4A;
+    color: #2B2E4A; 
   }
 
- :placeholder-shown{    /* for the placeholder text */
+:placeholder-shown{    /* for the placeholder text */
     padding-left: 10px;
 }
   
